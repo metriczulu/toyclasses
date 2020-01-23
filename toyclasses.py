@@ -77,10 +77,12 @@ if __name__ == "__main__":
 
     midcap = midcap.add_member(nikhil)
 
-    joanne = Person("Joanne")
-
-    midcap = midcap.add_member(joanne)
-
     matt = Person("Matt")
 
     midcap = midcap.add_member(matt)
+
+    joanne = Person("Joanne")
+
+    midcap = midcap.add_member(joanne)
+    
+    print(midcap)
