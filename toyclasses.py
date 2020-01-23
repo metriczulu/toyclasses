@@ -84,5 +84,11 @@ if __name__ == "__main__":
     joanne = Person("Joanne")
 
     midcap = midcap.add_member(joanne)
+
     #trying to merge Matt's branch back to the master
+
+    
     print(midcap)
+    bode = Person("Bode")
+    midcap = midcap.add_member(bode)
+
