@@ -86,3 +86,5 @@ if __name__ == "__main__":
     midcap = midcap.add_member(joanne)
     
     print(midcap)
+    bode = Person("Bode")
+    midcap = midcap.add_member(bode)
