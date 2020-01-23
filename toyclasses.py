@@ -11,10 +11,10 @@ class Person:
 
     def greet(self):
         # Method to greet the person
-        print(f"Howdy {self.name}!")
+        print(f"\nHowdy, I'm {self.name}!")
 
 
-class Introducer(Person):
+class Meeter(Person):
     '''
     Simple class that introduces itself to another person and says hello
 
@@ -25,11 +25,10 @@ class Introducer(Person):
 
     '''
 
-    def introduce(self):
+    def greet(self):
         # This is a method to introduce yourself, ask a name, and greet a person
-        person_name = input(f"Nice to meet you, my name is {self.name}. What's your name? ")
-        person = Person(person_name)
-        person.greet()
+        person_name = input(f"\nNice to meet you, my name is {self.name}. What's your name? ")
+        print(f"\n{person_name}, huh?  That's an ok name--I guess.  Not as good as {self.name}, but sufficient.")
 
 
 class Group:
@@ -51,6 +50,10 @@ class Group:
         # returns a string with the names of everyone in the group
         return ", ".join(self.names())
 
+    def __len__(self):
+        # returns the number of people in the group
+        return len(self.people)
+
     def add_member(self, new_person):
         # add a new person to the group in-place
         self.people.append(new_person)
@@ -70,8 +73,10 @@ if __name__ == "__main__":
     shane.greet()
 
     # Define an introducer named "Shane" and introduce himself to the user
-    shane_introducer = Introducer("Shane")
-    shane_introducer.introduce()
+    shane_meeter = Meeter("Shane")
+    shane_meeter.greet()
 
     # Create a team with the Group class
     team_1 = Group(shane)
+    print(f"Team 1 has the following people: {team_1}")
+    print(f"This comes out to {len(team_1)} person/people.")
