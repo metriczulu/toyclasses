@@ -77,6 +77,6 @@ if __name__ == "__main__":
 
     midcap = midcap.add_member(nikhil)
 
-    Bode=Person("Bode")
+    matt = Person("Matt")
 
-    midcap= midcap.add_member(Bode)
+    midcap = midcap.add_member(matt)
