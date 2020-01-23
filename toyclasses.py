@@ -68,15 +68,11 @@ class Group:
 
 
 if __name__ == "__main__":
-    # Define a person named "Shane" and have him say 'hi'
+
     shane = Person("Shane")
-    shane.greet()
 
-    # Define an Meeter named "Shane" and introduce himself to the user
-    shane_meeter = Meeter("Shane")
-    shane_meeter.greet()
+    midcap = Group(shane)
 
-    # Create a team with the Group class
-    team_1 = Group(shane)
-    print(f"Team 1 has the following people: {team_1}")
-    print(f"This comes out to {len(team_1)} person/people.")
+    nikhil = Person("Nikhil")
+
+    midcap = midcap.add_member(nikhil)
