@@ -21,7 +21,7 @@ class Meeter(Person):
     This class inherits from the Person class, so when you call it you need
     to include a name parameter.  For example:
 
-        >>>shane = Introducer("Shane")
+        >>>shane = Meeter("Shane")
 
     '''
 
@@ -68,11 +68,11 @@ class Group:
 
 
 if __name__ == "__main__":
-    # Define a person named "Shane" and greet him
+    # Define a person named "Shane" and have him say 'hi'
     shane = Person("Shane")
     shane.greet()
 
-    # Define an introducer named "Shane" and introduce himself to the user
+    # Define an Meeter named "Shane" and introduce himself to the user
     shane_meeter = Meeter("Shane")
     shane_meeter.greet()
 
