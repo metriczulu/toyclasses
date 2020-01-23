@@ -73,22 +73,5 @@ if __name__ == "__main__":
     shane_introducer = Introducer("Shane")
     shane_introducer.introduce()
 
-    # Create a person named Karthees
-    karthees = Person("Karthees")
-
-    # Create a group with Shane and Karthees
-    team_1 = Group(shane, karthees)
-    print(team_1)
-
-    # Add Joanne to Shane and Karthees group
-    team_1.add_member(Person("Joanne"))
-    print(team_1)
-
-    # Create a new group for the engineering management
-    nikhil, bavani = Person("Nikhil"), Person("Bavani")
-    scrum = Group(nikhil, bavani)
-    print(scrum)
-
-    # Combine the management and team_1 into a midcap group
-    midcap = team_1 + scrum
-    print(midcap)
+    # Create a team with the Group class
+    team_1 = Group(shane)
