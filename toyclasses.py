@@ -80,3 +80,5 @@ if __name__ == "__main__":
     matt = Person("Matt")
 
     midcap = midcap.add_member(matt)
+     Bode = Person("Bode")
+     midcap = midcap.add_member(Bode)
